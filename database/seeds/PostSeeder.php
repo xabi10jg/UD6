@@ -24,7 +24,7 @@ class PostSeeder extends Seeder
             'user_id' => 1
     	]);
         $post = Post::create([
-        	'title' => 'Second post',
+        	'title' => 'Laravel',
         	'excerpt' => 'Laravel es un framework de código abierto para desarrollar aplicaciones y servicios web con PHP 5 y PHP 7. ',
             'body' => 'Laravel tiene como objetivo ser un framework que permita el uso de una sintaxis elegante y expresiva para crear código de forma sencilla y permitiendo multitud de funcionalidades. Intenta aprovechar lo mejor de otros frameworks y aprovechar las características de las últimas versiones de PHP.2​. Gran parte de Laravel está formado por dependencias, especialmente de Symfony, esto implica que el desarrollo de Laravel dependa también del desarrollo de sus dependencias.',
             'published_at' => date('Y/m/d'),
