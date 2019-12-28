@@ -28,14 +28,14 @@
         <a title="Ver" href="{{route ('posts.show',$p->id)}}"><i class="fa fa-eye" style="color:black"></i></a>
         </td>
         <td>
-          <a title="Editar" href="{{route ('posts.edit',$p->id)}}"><i class="fa fa-pencil" style="color:black"></i></a>
+          <a title="Editar" href="{{route ('posts.edit',$p->id)}}"><i class="fas fa-pencil-alt" style="color:black"></i></a>
         </td>
         <td>
         <form style="display:inline" action="{{ route('posts.destroy',$p->id) }}" method="POST">
            {{ method_field('DELETE') }}
            {{ csrf_field() }}
            <button type="submit" id="delete" style="background: none;padding: 0px;border: none;color:red">
-              <i class="fa fa-trash-o" style="color:black"></i>
+              <i class="fas fa-trash" style="color:black"></i>
             </button>
         </form>
         </td>
