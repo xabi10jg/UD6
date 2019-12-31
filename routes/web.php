@@ -22,3 +22,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('posts', 'PostController');
+
+
+Route::get('/admin', 'HomeController@adminview');
+
+Route::get('/edituser/{id}/edit', 'HomeController@edit')->name('edituser');
+Route::put('update/{id}','HomeController@update')->name('updateuser');
+
